@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$("#img").hide();
+	$("#title2Right").hide();
 
 
 });

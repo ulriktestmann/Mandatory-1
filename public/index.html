@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	// $("#form").show();
+
+	$("#newsletterbtn").click(function(){
+		console.log("Button clicked")
+		$("#form").toggle();
+	})
+})
+
+ 
+</script>
+	
+</script>
 <link rel="stylesheet" type="text/css" href="main.css">.
 <div class="page">
 <div class="topLine">
@@ -24,7 +41,16 @@
 		Find all the events that are happening at kea
 	</label>
 
-	<button type="button">Subscribe to the Newsletter</button>
+	<button id="newsletterbtn" type="button">Subscribe to the Newsletter</button>
+
+	<div class=formDiv>
+	<form id="form">
+ 		First name: <input type="text" name="fname"><br>
+  		Last name: <input type="text" name="lname"><br>
+  		Email: <input type="text" name="email"><br>
+ 		<input type="submit" value="Submit">
+	</form>
+	</div>
 	
 </div>
 
@@ -52,6 +78,7 @@
 		</div>
 	
 	<div class=title2Right>
+		<div id="img2">
 		<img src="img_placeholder.jpeg" alt="Image" style="width:150px;height:150px;">
 		<img src="img_placeholder.jpeg" alt="Image" style="width:150px;height:150px;">
 		<img src="img_placeholder.jpeg" alt="Image" style="width:150px;height:150px;">
@@ -61,6 +88,7 @@
 		<img src="img_placeholder.jpeg" alt="Image" style="width:150px;height:150px;">
 		<img src="img_placeholder.jpeg" alt="Image" style="width:150px;height:150px;">
 		<img src="img_placeholder.jpeg" alt="Image" style="width:150px;height:150px;">
+		</div>
 
 	</div>
 </div>
@@ -84,4 +112,5 @@
 <h2>Copyright © KEA 2017</h2>
 </div>
 </div>
+</head>
 </html>
