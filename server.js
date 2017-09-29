@@ -1,8 +1,11 @@
+
 var express = require("express");
 var bodyParser = require("body-parser")
 
 var app = express();
 var path = __dirname + "/public/";
+
+app.set('port', (process.env.PORT || 5000));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -24,7 +27,6 @@ app.get("/pages", function(req, res){
 })
 
 
-
-
-
-app.listen(12420)
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
