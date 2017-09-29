@@ -3,4 +3,8 @@
 		"express":"4.14.1",
 		"body-parser": "^1.18.1"
 	}
+
+	"engines":{
+		"node":"6.11.0"
+	}
 }
